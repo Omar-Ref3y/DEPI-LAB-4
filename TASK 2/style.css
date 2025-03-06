@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #24292e;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#username {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+#search {
+    padding: 10px 20px;
+    background-color: #2ea44f;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#search:hover {
+    background-color: #2c974b;
+}
+
+#profile-container {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-username {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.profile-bio {
+    margin-bottom: 15px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #24292e;
+}
+
+.stat-name {
+    font-size: 14px;
+    color: #666;
+}
+
+.profile-links {
+    width: 100%;
+}
+
+.profile-link {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f6f8fa;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #0366d6;
+}
+
+.profile-link:hover {
+    background-color: #ebeef1;
+}
+
+.error-message {
+    color: #cb2431;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffeef0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .avatar {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .profile-stats {
+        flex-direction: column;
+    }
+    
+    .stat {
+        margin-bottom: 10px;
+    }
+}
